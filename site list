@@ -1,8 +1,0 @@
-projectName: wqp-external
-dockerImageName: kartoza/geoserver
-memory: 2048
-applicationName: wqp-geoserver
-rulePriority: 93
-containerPort: 8080
-healthCheck: /geoserver/web
-contextPath: /geoserver
