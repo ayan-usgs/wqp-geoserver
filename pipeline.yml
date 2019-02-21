@@ -6,3 +6,5 @@ rulePriority: 93
 containerPort: 8080
 healthCheck: /geoserver/web
 contextPath: /geoserver
+gitRepoUrl: https://github.com/NWQMC/wqp-geoserver.git
+gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
