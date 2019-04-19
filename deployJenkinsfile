@@ -1,4 +1,4 @@
-@Library(value='PipelineLibs@0.6.1', changelog=false) _
+@Library(value='PipelineLibs@2.x', changelog=false) _
 
 pipeline {
     agent {
@@ -14,4 +14,3 @@ pipeline {
         }
     }
 }
-
