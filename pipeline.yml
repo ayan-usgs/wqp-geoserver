@@ -14,5 +14,5 @@ envVars:
 mounts:
   - name: GEOSERVER_DATA_DIR_MOUNT
     source: /efs
-    destionation: /data
+    destination: /data
     readOnly: False
