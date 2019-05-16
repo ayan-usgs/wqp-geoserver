@@ -8,3 +8,11 @@ healthCheck: /geoserver/web/
 contextPath: /geoserver/*
 gitRepoUrl: https://github.com/NWQMC/wqp-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
+envVars:
+  - name: GEOSERVER_DATA_DIR
+    value: /data
+mounts:
+  - name: GEOSERVER_DATA_DIR_MOUNT
+    source: /efs
+    destionation: /data
+    readOnly: False
