@@ -10,6 +10,7 @@ gitRepoUrl: https://github.com/NWQMC/wqp-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 healthCheckTimeoutSeconds: 45
 healthCheckIntervalSeconds: 60
+listenerPort: 443
 envVars:
   - name: GEOSERVER_DATA_DIR
     value: /data
