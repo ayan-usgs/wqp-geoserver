@@ -8,3 +8,6 @@ healthCheck: /geoserver/web/
 contextPath: /geoserver/*
 gitRepoUrl: https://github.com/NWQMC/wqp-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
+# configuration repository paths
+configRepoPath: "wma/docker/wqp/wqp-geoserver"
+configCredentialsId: "wma-eto-eb-rsa"
