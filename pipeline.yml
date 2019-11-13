@@ -6,6 +6,7 @@ rulePriority: 93
 containerPort: 8080
 healthCheck: /geoserver/web/
 condition: /geoserver/*
+contextPath: /geoserver/*
 gitRepoUrl: https://github.com/NWQMC/wqp-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 healthCheckTimeoutSeconds: 45
@@ -19,3 +20,6 @@ mounts:
     source: /efs
     destination: /data
     readOnly: False
+# configuration repository paths
+configRepoPath: "wma/docker/wqp/wqp-geoserver"
+configCredentialsId: "wma-eto-eb-rsa"
