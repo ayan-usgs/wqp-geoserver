@@ -24,4 +24,4 @@ urlRules:
   - type: forward
     conditions:
       - "/geoserver/*"
-    priority: 503
+    priority: 93
