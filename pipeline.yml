@@ -9,6 +9,7 @@ gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 healthCheckTimeoutSeconds: 45
 healthCheckIntervalSeconds: 60
 listenerPort: 443
+launchType: EC2
 envVars:
   - name: GEOSERVER_DATA_DIR
     value: /data
