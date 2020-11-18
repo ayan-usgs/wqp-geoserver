@@ -1,6 +1,7 @@
 projectName: wqp-external
 dockerImageName: kartoza/geoserver
 memory: 3072
+cpu: 512
 applicationName: wqp-geoserver
 containerPort: 8080
 healthCheck: /geoserver/web/
