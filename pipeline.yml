@@ -1,7 +1,7 @@
 projectName: wqp-external
 dockerImageName: kartoza/geoserver
 memory: 3072
-cpu: 512
+cpu: 1024
 applicationName: wqp-geoserver
 containerPort: 8080
 healthCheck: /geoserver/web/
@@ -10,14 +10,6 @@ gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 healthCheckTimeoutSeconds: 45
 healthCheckIntervalSeconds: 60
 listenerPort: 443
-envVars:
-  - name: GEOSERVER_DATA_DIR
-    value: /data
-mounts:
-  - name: GEOSERVER_DATA_DIR_MOUNT
-    source: /efs
-    destination: /data
-    readOnly: False
 # configuration repository paths
 configRepoPath: "wma/docker/wqp/wqp-geoserver"
 configCredentialsId: "wma-eto-eb-rsa"
